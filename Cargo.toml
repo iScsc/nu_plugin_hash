@@ -1,19 +1,19 @@
 [package]
-authors = ["The Nushell Project Developers"]
-description = "A version incrementer plugin for Nushell"
-repository = "https://github.com/nushell/nushell/tree/main/crates/nu_plugin_example"
+authors = ["Antoine Stevan", "Nicolas Lesquoy"]
+description = "Hash functions for Nushell"
+repository = "https://github.com/iScsc/nu_plugin_hash"
 edition = "2021"
 license = "MIT"
-name = "nu_plugin_example"
+name = "nu_plugin_hash"
 version = "0.76.1"
 
 [[bin]]
-name = "nu_plugin_example"
+name = "nu_plugin_hash"
 bench = false
 
 [lib]
 bench = false
 
 [dependencies]
-nu-plugin = { path="../nu-plugin", version = "0.76.1" }
-nu-protocol = { path="../nu-protocol", version = "0.76.1", features = ["plugin"]}
+nu-plugin = { version = "0.76.1", path = "../nushell/crates/nu-plugin" }
+nu-protocol = { version = "0.76.1", path = "../nushell/crates/nu-protocol", features = ["plugin"] }

@@ -1,5 +1,5 @@
 use nu_plugin::{serve_plugin, MsgPackSerializer};
-use nu_plugin_example::Example;
+use nu_plugin_hash::Example;
 
 fn main() {
     // When defining your plugin, you can select the Serializer that could be
